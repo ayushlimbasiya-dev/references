@@ -7,6 +7,8 @@ function App() {
   let timeRef=useRef(null);
 
   function startTime(){
+     if (timeRef.current !== null) {
+    return;}
     timeRef.current =setInterval(()=>{
       setTime((time) =>time+1)
     },1000)
@@ -19,6 +21,9 @@ function App() {
     stopTime();
     setTime(0);
   }
+  const hours = Math.floor(time / 3600);
+  const minutes = Math.floor((time % 3600) / 60);
+  const seconds = time % 60;
 
   // const [count,setCount]=useState(0);
   // let val= useRef(0);
@@ -37,7 +42,7 @@ function App() {
 
  return(
   <div>
-    <h1>stopwatch:{time}</h1>
+    <h1>stopwatch:{hours}:{minutes}:{seconds}</h1>
     <button onClick={startTime}>
       start
     </button>

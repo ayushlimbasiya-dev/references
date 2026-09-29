@@ -16,6 +16,7 @@ body {
 div {
   text-align: center;
 }
+
 div {
   background: rgba(255, 255, 255, 0.1);
   padding: 45px 55px;
@@ -28,6 +29,24 @@ h1 {
   font-size: 38px;
   margin-bottom: 30px;
   letter-spacing: 1px;
+}
+
+/* Timer */
+.timer {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Start Stop Reset ka box */
+.button-box {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
