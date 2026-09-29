@@ -37,13 +37,15 @@ function App() {
 
  return(
   <div>
-    <h1>stopwatch:{time} seconds</h1>
+    <h1>stopwatch:{time}</h1>
     <button onClick={startTime}>
       start
     </button>
+    <br></br>
     <button onClick={stopTime}>
       stop
     </button>
+    <br></br>
     <button onClick={resetTime}>
       reset
     </button>
